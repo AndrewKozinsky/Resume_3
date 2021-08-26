@@ -1,7 +1,7 @@
 FROM node:14.15.3-alpine3.12
 WORKDIR /app
 COPY package.json ./
-#RUN npm i next react react-dom react-redux
+RUN npm i next react react-dom react-redux
 EXPOSE 3000
 RUN npm install
 COPY . .
