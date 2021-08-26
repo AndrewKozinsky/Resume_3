@@ -4,15 +4,13 @@ services:
   about:
     build:
       context: ./about
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     container_name: ak-about
     environment:
       - VIRTUAL_HOST=ak.editorium.net
       - LETSENCRYPT_HOST=ak.editorium.net
     command: npm run start
     restart: unless-stopped
-    stdin_open: true
-    tty: true
     volumes:
       - ./about:/app
 
