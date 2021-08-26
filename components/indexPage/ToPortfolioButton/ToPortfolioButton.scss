@@ -1,0 +1,31 @@
+$CN: to-portfolio-button;
+
+.#{$CN}__wrapper {
+    margin-top: 4rem;
+}
+@media (min-width: 500px) {
+    .#{$CN}__wrapper {
+        margin-top: 6rem;
+    }
+}
+
+.#{$CN} {
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+    background-color: var(--accent-color);
+    background-image: url('data:image/svg+xml;utf8,<svg width="78px" height="16px" viewBox="0 0 78 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="rgb(255, 255, 255)" fill-rule="evenodd"><path d="M69.0038641,1.08062485 C69.2309356,1.08062485 69.4512461,1.1579056 69.6285592,1.29975604 L77.0277781,7.21913119 C77.4590401,7.56414074 77.5289614,8.19343311 77.1839519,8.62469505 C77.1378201,8.68235975 77.0854428,8.73473705 77.0277781,8.78086881 L69.6285592,14.700244 C69.1972972,15.0452535 68.5680049,14.9753321 68.2229953,14.5440702 C68.0811449,14.3667572 68.0038641,14.1464466 68.0038641,13.9193752 L68.0038641,11 L1.0289978,11 C0.478975227,11 0.0322025867,10.5558094 0.029014599,10.0057961 L0.00579567658,6.0057961 C0.00285734657,5.49296888 0.386441206,5.06806713 0.883436723,5.00742036 L1.00581264,5 L68.0038641,5 L68.0038641,2.08062485 C68.0038641,1.5283401 68.4515794,1.08062485 69.0038641,1.08062485 Z M70.003,4.16 L70.0038641,7 L2.011,7 L2.022,9 L70.0038641,9 L70.003,11.839 L74.802,8 L70.003,4.16 Z"></path></g></svg>');
+    background-position: calc(100% - 20px) center;
+    background-repeat: no-repeat;
+    padding: 7px 25px;
+    border-radius: var(--radius);
+    border: none;
+
+    &:hover {
+        background-color: var(--accent-color-hover);
+    }
+}

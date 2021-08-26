@@ -1,0 +1,24 @@
+@use './general/reset.css';
+@use './general/variables.css';
+@use './general/general.css';
+
+@use "../components/common/Layout/Layout";
+@use "../components/common/Footer/Footer";
+@use "../components/common/Menu/Menu";
+@use "../components/common/Header/Header";
+@use "../components/common/ContactsBtn/ContactsBtn";
+@use "../components/common/Plate/Plate";
+
+@use "../components/indexPage/AboutDev/AboutDev";
+@use "../components/indexPage/DetailsDev/DetailsDev";
+@use "../components/indexPage/DetailsParagraph/DetailsParagraph";
+@use "../components/indexPage/SalaryPlate/SalaryPlate";
+@use "../components/indexPage/Info/Info";
+@use "../components/indexPage/Tools/Tools";
+@use "../components/indexPage/Experience/Experience";
+@use "../components/indexPage/ToPortfolioButton/ToPortfolioButton";
+
+@use "../components/workPage/Portfolio/Portfolio";
+@use "../components/workPage/PortfolioTopControls/PortfolioTopControls";
+@use "../components/workPage/PortfolioMenu/PortfolioMenu";
+@use "../components/workPage/PortfolioContent/PortfolioContent";

@@ -1,0 +1,12 @@
+$CN: details-paragraph;
+
+.#{$CN} {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin-bottom: 5px;
+}
+
+.#{$CN}__text {
+    line-height: 2.6rem;
+}

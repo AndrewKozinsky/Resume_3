@@ -1,0 +1,118 @@
+
+$CN: about-dev;
+
+// Обёртки
+.#{$CN} {
+
+}
+
+.#{$CN}__photo-side {
+    position: relative;
+    z-index: 0;
+}
+
+.#{$CN}__text-side {
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 750px) {
+    .#{$CN}__photo-side {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .#{$CN} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .#{$CN}__photo-side, .#{$CN}__text-side {
+        width: calc(50% - 20px);
+    }
+    .#{$CN}__photo-side {
+        order: 2;
+    }
+    .#{$CN}__text-side {
+        order: 1;
+    }
+}
+@media (min-width: 1100px) {
+    .#{$CN} {
+        margin-top: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .#{$CN} {
+        margin-top: -30px;
+    }
+}
+
+
+// Фотография
+.#{$CN}__photo {
+    width: 180%;
+    margin-top: -10%;
+    margin-bottom: -20%;
+    transform: translate(-28%, 0);
+}
+@media (min-width: 500px) {
+    .#{$CN}__photo {
+        width: 160%;
+        transform: translate(-23%, 0);
+        margin-top: -5%;
+    }
+}
+@media (min-width: 600px) {
+    .#{$CN}__photo {
+        margin-top: -7%;
+        margin-bottom: -27%;
+    }
+}
+@media (min-width: 750px) {
+    .#{$CN}__photo {
+        width: auto;
+        margin: -4% auto -180px auto;
+        transform: translate(-50px, 0);
+    }
+}
+@media (min-width: 1000px) {
+    .#{$CN}__photo {
+        width: auto;
+        margin: -180px auto -180px auto;
+        transform: translate(-80px, 100px);
+    }
+}
+@media (min-width: 1200px) {
+    .#{$CN}__photo {
+        margin-top: -160px;
+    }
+}
+
+
+// Текст
+.#{$CN}__text {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 600px) {
+    .#{$CN}__text {
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+    }
+}
+@media (min-width: 900px) {
+    .#{$CN}__text {
+        font-size: 3.4rem;
+        line-height: 4.4rem;
+    }
+}

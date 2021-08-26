@@ -1,0 +1,104 @@
+$CN: footer;
+
+.#{$CN} {
+    display: grid;
+    margin-top: 5rem;
+}
+
+@media (max-width: 470px) {
+    .#{$CN}__cell {
+        padding-bottom: 12px;
+    }
+    .#{$CN}__cell:nth-child(2n) {
+        padding-bottom: 27px;
+    }
+    .#{$CN}__cell:last-child {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 470px) and (max-width: 700px) {
+    .#{$CN} {
+        grid-template-columns: auto auto;
+        margin-top: 6rem;
+    }
+    .#{$CN}__cell:nth-child(2n) {
+        padding-bottom: 12px;
+    }
+    .#{$CN}__cell:nth-child(7), .#{$CN}__cell:nth-child(8) {
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+    .#{$CN} {
+        grid-template-columns: repeat(3, auto);
+    }
+    .#{$CN}__cell:nth-child(3n) {
+        padding-bottom: 12px;
+    }
+    .#{$CN}__cell:nth-child(7), .#{$CN}__cell:nth-child(8) {
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1600px) {
+    .#{$CN} {
+        grid-template-columns: repeat(4, auto);
+        margin-top: 8rem;
+    }
+    .#{$CN}__cell:nth-child(4n) {
+        padding-bottom: 12px;
+    }
+    .#{$CN}__cell:nth-child(5), .#{$CN}__cell:nth-child(6), .#{$CN}__cell:nth-child(7), .#{$CN}__cell:nth-child(8) {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    .#{$CN} {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+    }
+}
+
+
+// Ссылка
+.#{$CN}-link {
+    position: relative;
+    white-space: nowrap;
+    margin-left: 27px;
+}
+.#{$CN}-link:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -27px;
+
+    width: 22px;
+    height: 20px;
+}
+
+.#{$CN}-link__mail:before {
+    background-image: url("icons/mail.svg");
+}
+.#{$CN}-link__skype:before {
+    background-image: url("icons/skype.svg");
+}
+.#{$CN}-link__hh:before {
+    background-image: url("icons/hh.svg");
+}
+.#{$CN}-link__phone:before {
+    background-image: url("icons/phone.svg");
+}
+.#{$CN}-link__telegram:before {
+    background-image: url("icons/telegram.svg");
+}
+.#{$CN}-link__github:before {
+    background-image: url("icons/github.svg");
+}
+.#{$CN}-link__twitter:before {
+    background-image: url("icons/twitter.svg");
+}
+.#{$CN}-link__facebook:before {
+    background-image: url("icons/facebook.svg");
+}

@@ -1,0 +1,47 @@
+$CN: portfolio;
+
+.#{$CN} {}
+
+// Top part
+.#{$CN}__top-part {
+    display: block;
+    margin-top: 3rem;
+}
+@media (min-width: 900px) {
+    .#{$CN}__top-part {
+        display: none;
+    }
+}
+
+// Main part
+.#{$CN}__main-part {
+
+}
+@media (min-width: 900px) {
+    .#{$CN}__main-part {
+        display: grid;
+        grid-template-columns: 22rem 1fr;
+        gap: 3.5rem;
+    }
+}
+
+// Left and Right main parts
+.#{$CN}__main-left {
+    display: none;
+}
+.#{$CN}__main-left--visible {
+    display: block;
+}
+
+.#{$CN}__main-right {
+    display: none;
+}
+.#{$CN}__main-right--visible {
+    display: block;
+}
+
+@media (min-width: 900px) {
+    .#{$CN}__main-left, .#{$CN}__main-right {
+        display: block;
+    }
+}

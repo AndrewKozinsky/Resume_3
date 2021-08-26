@@ -1,0 +1,48 @@
+$CN: menu;
+
+.#{$CN} {
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--radius);
+}
+
+.#{$CN}__item {
+    display: block;
+    font-family: 'TT Norms', Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: left;
+    background-color: white;
+
+    padding: 6px 20px;
+    border: none;
+
+    &:hover {
+        color: var(--accent-color);
+        border: none;
+    }
+}
+.#{$CN}__item:not(:last-child) {
+    border-bottom: 1px solid var(--black-link-border-color);
+}
+
+.#{$CN}__item--active {
+    color: white;
+    background-color: var(--accent-color);
+
+    &:hover {
+        color: white;
+    }
+}
+
+.#{$CN}__item--disabled {
+    color: var(--black-link-border-color-hover);
+    cursor: default;
+
+    &:hover {
+        color: var(--black-link-border-color-hover);
+    }
+}

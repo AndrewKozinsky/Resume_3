@@ -1,0 +1,113 @@
+$CN: contacts;
+
+// Компонент списка контактов
+.#{$CN} {
+    position: relative;
+    display: inline-block;
+
+    &:hover .#{$CN}__list{
+        display: grid;
+    }
+}
+
+// Кнопка со списком контактов
+.#{$CN}__front-btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--text-color);
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg width="16px" height="12px" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="rgb(30, 30, 30)"><rect x="0" y="0" width="16" height="2"></rect><rect x="0" y="5" width="16" height="2"></rect><rect x="0" y="10" width="8" height="2"></rect></g></svg>');
+    background-repeat: no-repeat;
+    background-position: 15px 12px;
+
+    padding: 7px 15px 7px 40px;
+    margin: 0;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--radius);
+
+    &:hover {
+        color: var(--black-link-color-hover);
+        border-color: var(--accent-color);
+    }
+}
+
+.#{$CN}__list {
+    position: absolute;
+    display: none;
+
+    background-color: white;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+
+@media (min-width: 500px) {
+    .#{$CN}__list {
+        right: 0;
+    }
+}
+
+.#{$CN}__btn {
+    display: inline-block;
+    padding: 5px 15px;
+    color: var(--text-color);
+    white-space: nowrap;
+    border: none;
+
+    &:hover {
+        color: var(--text-color);
+        background-color: rgb(231, 238, 247);
+        border: none;
+    }
+
+    &:nth-child(2n) {
+        margin-bottom: 12px;
+    }
+    &:first-child {
+        padding-top: 13px;
+    }
+    &:last-child {
+        padding-bottom: 12px;
+        margin-bottom: 0;
+    }
+}
+
+.#{$CN}-btn__text {
+    position: relative;
+    margin-left: 27px;
+}
+
+.#{$CN}-btn__text:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -27px;
+
+    width: 22px;
+    height: 20px;
+}
+.#{$CN}-btn__text__mail:before {
+    background-image: url("../Footer/icons/mail.svg");
+}
+.#{$CN}-btn__text__skype:before {
+    background-image: url("../Footer/icons/skype.svg");
+}
+.#{$CN}-btn__text__hh:before {
+    background-image: url("../Footer/icons/hh.svg");
+}
+.#{$CN}-btn__text__phone:before {
+    background-image: url("../Footer/icons/phone.svg");
+}
+.#{$CN}-btn__text__telegram:before {
+    background-image: url("../Footer/icons/telegram.svg");
+}
+.#{$CN}-btn__text__github:before {
+    background-image: url("../Footer/icons/github.svg");
+}
+.#{$CN}-btn__text__twitter:before {
+    background-image: url("../Footer/icons/twitter.svg");
+}
+.#{$CN}-btn__text__facebook:before {
+    background-image: url("../Footer/icons/facebook.svg");
+}

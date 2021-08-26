@@ -1,0 +1,80 @@
+$CN: portfolio-content;
+
+// HEADER
+.#{$CN}__header {
+    font-size: 3.6rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+// SHORT DESCRIPTION
+.#{$CN}__short-description {
+    margin-bottom: 1rem;
+}
+
+// OUTER LINKS
+.#{$CN}__outer-links {
+    display: flex;
+    border-top: 1px solid var(--black-link-border-color);
+    padding: 1rem 0;
+}
+.#{$CN}__outer-link {
+    display: inline-block;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 6px 5px;
+    padding: 1px 10px 2px 7px;
+    margin-right: 1rem;
+    //border: 1px solid var(--black-link-border-color);
+    border-radius: var(--radius);
+
+    &:hover {
+        border-color: var(--accent-color);
+    }
+}
+
+.#{$CN}__outer-link-icon {
+    vertical-align: -1px;
+    margin-right: 3px;
+}
+.#{$CN}__outer-link-link {
+    color: var(--text-color);
+    border: none;
+
+    &:hover {
+        color: var(--accent-color);
+        border: none;
+    }
+}
+
+// TAGS
+.#{$CN}__tags {
+    border-top: 1px solid var(--black-link-border-color);
+    padding-top: 10px;
+}
+.#{$CN}__tag {
+    display: inline-block;
+    background-color: white;
+    padding: 2px 12px;
+    //border: 1px solid var(--black-link-border-color);
+    border-radius: var(--radius);
+    margin: 0 1rem 1rem 0;
+}
+
+
+.#{$CN}__full-description {
+    padding-top: 2rem;
+    border-top: 1px solid var(--black-link-border-color);
+}
+.#{$CN}__full-description-text {
+    margin-bottom: 1rem;
+}
+.#{$CN}__full-description-image {
+    max-width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,25 @@
+:root {
+    --bg-color: rgb(231, 238, 246);
+
+    /* Text color */
+    --text-color: rgb(30, 30, 30);
+
+    --accent-color: rgb(15, 114, 224);
+    --accent-color-hover: rgb(0, 100, 210);
+
+    /* Link colors */
+    --link-color: rgb(0, 74, 219);
+    --link-color-hover: rgb(0, 74, 219);
+    --link-border-color: rgba(0, 74, 219, .2);
+    --link-border-color-hover: rgba(0, 74, 219, .3);
+
+    /* Black link colors */
+    --black-link-color: rgb(30, 30, 30);
+    --black-link-color-hover: rgb(0, 0, 0);
+    --black-link-border-color: rgba(30, 30, 30, .2);
+    --black-link-border-color-hover: rgba(0, 0, 0, .3);
+
+    /* Border radius */
+    --radius: 8px;
+    --radius-2: 15px;
+}
