@@ -1,14 +1,12 @@
 version: "3.3"
 
 services:
-  about:
+  app:
     build:
       context: app
       dockerfile: Dockerfile.prod
     ports:
       - 3000:3000
-    container_name: ak-about
-    command: npm run start
-    restart: unless-stopped
+    container_name: ak-app
     volumes:
-      - ./about:/app
+      - ./app:/app
