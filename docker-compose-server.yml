@@ -9,7 +9,6 @@ services:
     environment:
       - VIRTUAL_HOST=ak.editorium.net
       - LETSENCRYPT_HOST=ak.editorium.net
-    command: npm run start
     restart: unless-stopped
     volumes:
       - ./about:/app
