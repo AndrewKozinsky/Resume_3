@@ -9,12 +9,12 @@ services:
     environment:
       - VIRTUAL_HOST=ak.editorium.net
       - LETSENCRYPT_HOST=ak.editorium.net
-    command: npm run dev
+    command: npm run start
     restart: unless-stopped
     stdin_open: true
     tty: true
     volumes:
-      - ./about/src:/app/src
+      - ./about:/app
 
 networks:
   default:

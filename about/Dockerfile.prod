@@ -11,4 +11,3 @@ COPY . .
 
 # Собрать пакет
 RUN npm run build
-RUN npm run start
