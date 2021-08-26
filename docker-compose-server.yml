@@ -1,17 +1,18 @@
 version: "3.3"
 
 services:
-  about:
+  ak-app:
     build:
-      context: ./about
+      context: app
       dockerfile: Dockerfile.serv
-    container_name: ak-about
+    container_name: ak-app
     environment:
       - VIRTUAL_HOST=ak.editorium.net
       - LETSENCRYPT_HOST=ak.editorium.net
+    command: npm run start
     restart: unless-stopped
     volumes:
-      - ./about:/app
+      - ./app:/app
 
 networks:
   default:

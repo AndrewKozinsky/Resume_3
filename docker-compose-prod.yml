@@ -3,7 +3,7 @@ version: "3.3"
 services:
   about:
     build:
-      context: ./about
+      context: app
       dockerfile: Dockerfile.prod
     ports:
       - 3000:3000

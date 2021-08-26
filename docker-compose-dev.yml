@@ -3,7 +3,7 @@ version: "3.3"
 services:
   about:
     build:
-      context: ./about
+      context: app
       dockerfile: Dockerfile.dev
     container_name: ak-about
     command: npm run dev
