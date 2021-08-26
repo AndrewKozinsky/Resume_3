@@ -8,5 +8,5 @@ RUN npm i -g next
 RUN npm i -g react
 RUN npm i -g react-dom
 RUN npm i -g react-redux
-RUN npm run build
+#RUN npm run build
 EXPOSE 3000
