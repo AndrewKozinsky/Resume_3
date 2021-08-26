@@ -8,5 +8,6 @@ RUN npm i -g next
 RUN npm i -g react
 RUN npm i -g react-dom
 RUN npm i -g react-redux
+RUN npm i -D typescript @types/react @types/node sass
 #RUN npm run build
 EXPOSE 3000
