@@ -3,7 +3,7 @@ version: "3.3"
 services:
   nginx:
     image: nginx:1.19.7-alpine
-    container_name: editor-nginx
+    container_name: ak-nginx
     environment:
       - VIRTUAL_HOST=ak.editorium.net
       - LETSENCRYPT_HOST=ak.editorium.net
