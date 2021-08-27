@@ -5,8 +5,8 @@ services:
     image: nginx:1.19.7-alpine
     container_name: ak-nginx
     environment:
-      - VIRTUAL_HOST=ak.editorium.net
-      - LETSENCRYPT_HOST=ak.editorium.net
+      - VIRTUAL_HOST=andrewkozinsky.ru
+      - LETSENCRYPT_HOST=andrewkozinsky.ru
     depends_on:
       - ak-app
     volumes:

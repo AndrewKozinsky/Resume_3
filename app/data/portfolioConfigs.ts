@@ -188,6 +188,57 @@ const portfolioConfigItems: PortfolioConfig.Items = [
             },
         ]
     },
+    {
+        set: 'design',
+        title: 'Письма',
+        portfolioLink: 'letters',
+        shortDescription: 'Письма для рассылок о различных событиях.',
+        tags: ['Sketch', 'Photoshop'],
+        description: [
+            {
+                type: 'image',
+                images: [
+                    { src: '/portfolio/letters_des/letters_1.jpg', retina: true },
+                    { src: '/portfolio/letters_des/letters_1.webp', retina: true },
+                ]
+            },
+            {
+                type: 'image',
+                images: [
+                    { src: '/portfolio/letters_des/letters_2.jpg', retina: true },
+                    { src: '/portfolio/letters_des/letters_2.webp', retina: true },
+                ]
+            },
+            {
+                type: 'image',
+                images: [
+                    { src: '/portfolio/letters_des/letters_3.jpg', retina: true },
+                    { src: '/portfolio/letters_des/letters_3.webp', retina: true },
+                ]
+            },
+            {
+                type: 'image',
+                images: [
+                    { src: '/portfolio/letters_des/letters_4.jpg', retina: true },
+                    { src: '/portfolio/letters_des/letters_4.webp', retina: true },
+                ]
+            },
+            {
+                type: 'image',
+                images: [
+                    { src: '/portfolio/letters_des/letters_5.jpg', retina: true },
+                    { src: '/portfolio/letters_des/letters_5.webp', retina: true },
+                ]
+            },
+            {
+                type: 'image',
+                images: [
+                    { src: '/portfolio/letters_des/letters_6.jpg', retina: true },
+                    { src: '/portfolio/letters_des/letters_6.webp', retina: true },
+                ]
+            },
+        ]
+    },
 ]
 
 export default portfolioConfigItems
