@@ -1,22 +1,24 @@
 version: "3.3"
 
 services:
-  ak_nginx:
+  nginx:
     image: nginx:1.19.7-alpine
-    container_name: ak_nginx
+    container_name: ak-nginx
     environment:
       - VIRTUAL_HOST=ak.editorium.net
       - LETSENCRYPT_HOST=ak.editorium.net
     depends_on:
-      - ak_app
+      - app
+    command:
+      - npm run start
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
 
-  ak_app:
+  app:
     build:
       context: app
       dockerfile: Dockerfile.serv
-    container_name: ak_app
+    container_name: ak-app
 
 networks:
   default:
