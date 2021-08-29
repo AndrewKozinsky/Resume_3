@@ -10,7 +10,7 @@ namespace PortfolioConfig {
         portfolioLink: string
         siteLinkText?: string
         siteLink?: string
-        shortDescription: string
+        shortDescription?: string
         tags?: string[]
         github?: string
         description?: Description

@@ -69,6 +69,7 @@ $CN: portfolio-content;
 .#{$CN}__full-description {
     padding-top: 2rem;
     border-top: 1px solid var(--black-link-border-color);
+    margin-bottom: -1rem;
 }
 .#{$CN}__full-description-text {
     margin-bottom: 1rem;

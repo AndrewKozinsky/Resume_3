@@ -32,6 +32,8 @@ function Header(props: CommonPropType) {
 
 function ShortDescription(props: CommonPropType) {
     const { workData } = props
+
+    if (!workData.shortDescription) return null
     return <p className={`${CN}__short-description`}>{workData.shortDescription}</p>
 }
 
