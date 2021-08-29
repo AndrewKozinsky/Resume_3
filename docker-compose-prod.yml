@@ -4,9 +4,6 @@ services:
   nginx:
     image: nginx:1.19.7-alpine
     container_name: ak-nginx
-    environment:
-      - VIRTUAL_HOST=ak.editorium.net
-      - LETSENCRYPT_HOST=ak.editorium.net
     depends_on:
       - app
     volumes:
@@ -18,8 +15,5 @@ services:
       dockerfile: Dockerfile.serv
     container_name: ak-app
     restart: unless-stopped
-
-networks:
-  default:
-    external:
-      name: nginx-proxy
+    ports:
+      - "3000:3000"

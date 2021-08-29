@@ -1,28 +1,23 @@
 version: "3.3"
 
 services:
-  ak_nginx:
+  nginx:
     image: nginx:1.19.7-alpine
-    container_name: ak_nginx
-    environment:
-      - VIRTUAL_HOST=andrewkozinsky.ru
-      - LETSENCRYPT_HOST=andrewkozinsky.ru
+    container_name: ak-nginx
     depends_on:
-      - ak_app
+      - app
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
 
 
-  ak_app:
+  app:
     build:
       context: app
       dockerfile: Dockerfile.dev
-    container_name: ak_app
+    container_name: ak-app
     command: npm run dev
     restart: unless-stopped
-    stdin_open: true
-    tty: true
     ports:
-      - 3000:3000
+      - "3000:3000"
     volumes:
       - ./app:/app
