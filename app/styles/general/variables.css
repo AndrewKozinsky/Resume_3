@@ -20,6 +20,6 @@
     --black-link-border-color-hover: rgba(0, 0, 0, .3);
 
     /* Border radius */
-    --radius: 8px;
-    --radius-2: 15px;
+    --radius: 5px;
+    --radius-2: 8px;
 }

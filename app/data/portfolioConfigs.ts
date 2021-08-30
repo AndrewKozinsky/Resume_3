@@ -64,13 +64,21 @@ const portfolioConfigItems: PortfolioConfig.Items = [
         portfolioLink: 'todo',
         shortDescription: 'Short description',
     },*/
-    /*{
+    {
         set: 'code',
         category: 'Вёрстка',
-        title: 'Kflex.ru',
+        title: 'K-Flex.ru',
         portfolioLink: 'kflex',
-        shortDescription: 'Short description',
-    },*/
+        description: [
+            {
+                type: 'video',
+                videos: [
+                    { src: '/portfolio/kflex_dev/kflex_1.mp4' },
+                    { src: '/portfolio/kflex_dev/kflex_1.webm' },
+                ]
+            },
+        ]
+    },
     /*{
         set: 'code',
         category: 'Вёрстка',
@@ -78,20 +86,37 @@ const portfolioConfigItems: PortfolioConfig.Items = [
         portfolioLink: 'friko',
         shortDescription: 'Short description',
     },*/
-    /*{
+    {
         set: 'code',
         category: 'Вёрстка',
         title: 'Volсano.ru',
         portfolioLink: 'volcano',
-        shortDescription: 'Short description',
-    },*/
-    /*{
+        description: [
+            {
+                type: 'video',
+                videos: [
+                    { src: '/portfolio/volcano_dev/volcano_1.mp4' },
+                    { src: '/portfolio/volcano_dev/volcano_1.webm' },
+                ]
+            },
+        ]
+    },
+    {
         set: 'code',
         category: 'Вёрстка',
         title: 'Тепломаш.рф',
         portfolioLink: 'teplomash',
-        shortDescription: 'Short description',
-    },*/
+        shortDescription: 'Вёрстка макетов сайта Тепломаш',
+        description: [
+            {
+                type: 'video',
+                videos: [
+                    { src: '/portfolio/teplomash_dev/teplomash_1.mp4' },
+                    { src: '/portfolio/teplomash_dev/teplomash_1.webm' },
+                ]
+            },
+        ]
+    },
 
     // DESIGN
     {

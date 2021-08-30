@@ -98,6 +98,9 @@ function FullDescription(props: CommonPropType) {
         else if (descItem.type === 'image') {
             return <FullDescriptionImage item={descItem} key={i} />
         }
+        else if (descItem.type === 'video') {
+            return <FullDescriptionVideo item={descItem} key={i} />
+        }
     })
 
     return (
@@ -151,9 +154,35 @@ function FullDescriptionImage(props: FullDescriptionImageItemPropType) {
     const img = <img src={mainImg?.src} className={`${CN}__full-description-image`} />
 
     return (
-        <picture>
+        <picture key={images[0].src}>
             { sources }
             { img }
         </picture>
+    )
+}
+
+type FullDescriptionVideoItemPropType = {
+    item: PortfolioConfig.DescriptionVideoItem
+}
+
+function FullDescriptionVideo(props: FullDescriptionVideoItemPropType) {
+    const { item } = props
+
+    // Set type to videos
+    const videos = item.videos.map(videoData => {
+        const videoTypes = videoData.src.split('.')
+        const videoDataType = videoTypes[videoTypes.length - 1]
+
+        return { ...videoData, type: videoDataType }
+    })
+
+    const sources = videos.map((videoData, i) => {
+        return <source type={`video/${videoData.type}`} src={videoData.src} key={i} />
+    })
+
+    return (
+        <video controls preload="auto" autoPlay loop muted className={`${CN}__full-description-video`} key={videos[0].src}>
+            {sources}
+        </video>
     )
 }

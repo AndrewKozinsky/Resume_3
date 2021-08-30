@@ -19,7 +19,7 @@ namespace PortfolioConfig {
     export type Set = 'code' | 'design'
 
     type Description = DescriptionItem[]
-    export type DescriptionItem = DescriptionTextItem | DescriptionImageItem
+    export type DescriptionItem = DescriptionTextItem | DescriptionImageItem | DescriptionVideoItem
     export type DescriptionTextItem = {
         type: 'text'
         text: string
@@ -31,6 +31,14 @@ namespace PortfolioConfig {
     type DescriptionImageItemSource = {
         src: string
         retina?: true
+    }
+
+    export type DescriptionVideoItem = {
+        type: 'video'
+        videos: DescriptionVideoItemSource[]
+    }
+    type DescriptionVideoItemSource = {
+        src: string
     }
 }
 
