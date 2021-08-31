@@ -1,5 +1,6 @@
 import React from 'react'
 import PortfolioConfig from '../../../data/PortfolioConfigType'
+import {makeCN} from '../../../utils/StringUtils'
 
 const CN = 'portfolio-content'
 
@@ -92,7 +93,10 @@ function FullDescription(props: CommonPropType) {
     if (!workData.description) return null
 
     const descriptionParts = workData.description.map((descItem, i) => {
-        if (descItem.type === 'text') {
+        if (descItem.type === 'header') {
+            return <FullDescriptionHeader item={descItem} key={i} />
+        }
+        else if (descItem.type === 'text') {
             return <FullDescriptionText item={descItem} key={i} />
         }
         else if (descItem.type === 'image') {
@@ -107,6 +111,24 @@ function FullDescription(props: CommonPropType) {
         <div className={`${CN}__full-description`}>
             {descriptionParts}
         </div>
+    )
+}
+
+type FullDescriptionHeaderItemPropType = {
+    item: PortfolioConfig.DescriptionHeaderItem
+}
+
+function FullDescriptionHeader(props: FullDescriptionHeaderItemPropType) {
+    const { item } = props
+
+    const Tag = item.tag
+
+    const classes = [`${CN}__full-description-header`, `${CN}__full-description-header--${item.tag}`]
+
+    return (
+        <Tag className={ makeCN(classes) }>
+            {item.text}
+        </Tag>
     )
 }
 
@@ -154,7 +176,7 @@ function FullDescriptionImage(props: FullDescriptionImageItemPropType) {
     const img = <img src={mainImg?.src} className={`${CN}__full-description-image`} />
 
     return (
-        <picture key={images[0].src}>
+        <picture className={`${CN}__full-description-image-pic`} key={images[0].src}>
             { sources }
             { img }
         </picture>
@@ -180,9 +202,24 @@ function FullDescriptionVideo(props: FullDescriptionVideoItemPropType) {
         return <source type={`video/${videoData.type}`} src={videoData.src} key={i} />
     })
 
+    const videoAttrs: {[key: string]: boolean | string} = {
+        controls: true,
+        preload: "auto",
+        autoPlay: true,
+        loop: true,
+        muted: true,
+        className: `${CN}__full-description-video`,
+        key: videos[0].src
+    }
+    if (item.poster) {
+        videoAttrs.poster = item.poster
+    }
+
     return (
-        <video controls preload="auto" autoPlay loop muted className={`${CN}__full-description-video`} key={videos[0].src}>
-            {sources}
-        </video>
+        <div className={`${CN}__full-description-video-w`}>
+            <video {...videoAttrs}>
+                {sources}
+            </video>
+        </div>
     )
 }

@@ -19,11 +19,19 @@ namespace PortfolioConfig {
     export type Set = 'code' | 'design'
 
     type Description = DescriptionItem[]
-    export type DescriptionItem = DescriptionTextItem | DescriptionImageItem | DescriptionVideoItem
+    export type DescriptionItem = DescriptionHeaderItem | DescriptionTextItem | DescriptionImageItem | DescriptionVideoItem
+
+    export type DescriptionHeaderItem = {
+        type: 'header',
+        tag: 'h2' | 'h3'
+        text: string
+    }
+
     export type DescriptionTextItem = {
         type: 'text'
         text: string
     }
+
     export type DescriptionImageItem = {
         type: 'image'
         images: DescriptionImageItemSource[]
@@ -35,6 +43,7 @@ namespace PortfolioConfig {
 
     export type DescriptionVideoItem = {
         type: 'video'
+        poster?: string
         videos: DescriptionVideoItemSource[]
     }
     type DescriptionVideoItemSource = {

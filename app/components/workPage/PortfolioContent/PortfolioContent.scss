@@ -69,18 +69,65 @@ $CN: portfolio-content;
 .#{$CN}__full-description {
     padding-top: 2rem;
     border-top: 1px solid var(--black-link-border-color);
-    margin-bottom: -1rem;
 }
+
+.#{$CN}__full-description-header {}
+.#{$CN}__full-description-header--h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+}
+.#{$CN}__full-description-header--h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
 .#{$CN}__full-description-text {
-    margin-bottom: 1rem;
 }
+
 .#{$CN}__full-description-image {
     max-width: 100%;
     border-radius: var(--radius);
-    margin-bottom: 1rem;
+}
+
+.#{$CN}__full-description-video-w {
+    overflow: hidden;
 }
 .#{$CN}__full-description-video {
     max-width: 100%;
+    margin-top: -1px;
     border-radius: var(--radius);
-    margin-bottom: 1rem;
+}
+
+// Indents
+.#{$CN}__full-description-image-pic + .#{$CN}__full-description-image-pic {
+    margin-top: 1rem;
+}
+.#{$CN}__full-description-text + .#{$CN}__full-description-video-w {
+    margin-top: 1rem;
+}
+.#{$CN}__full-description-video-w + .#{$CN}__full-description-text {
+    margin-top: 1rem;
+}
+.#{$CN}__full-description-video-w + .#{$CN}__full-description-header--h2 {
+    margin-top: 1.5rem;
+}
+.#{$CN}__full-description-video-w + .#{$CN}__full-description-header--h3 {
+    margin-top: 1.5rem;
+}
+.#{$CN}__full-description-header--h2 + .#{$CN}__full-description-header--h3 {
+    margin-top: 1rem;
+}
+.#{$CN}__full-description-header--h3 + .#{$CN}__full-description-text {
+    margin-top: 8px;
+}
+.#{$CN}__full-description-text + .#{$CN}__full-description-text {
+    margin-top: 8px;
+}
+.#{$CN}__full-description-text + .#{$CN}__full-description-header--h3 {
+    margin-top: 17px;
+}
+.#{$CN}__full-description-text + .#{$CN}__full-description-header--h2 {
+    margin-top: 2.5rem;
 }
