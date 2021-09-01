@@ -75,7 +75,7 @@ body {
 
 /* Стиль ссылок */
 a {
-    color: var(--link-color);
+    color: var(--accent-color);
     font-weight: 500;
     border-bottom: 1px solid var(--link-border-color);
     transition: color .25s, border-bottom-color .25s;
@@ -83,7 +83,7 @@ a {
     cursor: pointer;
 }
 a:hover {
-    color: var(--link-color-hover);
+    color: var(--accent-color-hover);
     border-bottom: 1px solid var(--link-border-color-hover);
     transition: border-bottom-color .1s;
 }

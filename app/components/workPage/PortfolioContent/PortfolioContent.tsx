@@ -176,7 +176,7 @@ function FullDescriptionImage(props: FullDescriptionImageItemPropType) {
     const img = <img src={mainImg?.src} className={`${CN}__full-description-image`} />
 
     return (
-        <picture className={`${CN}__full-description-image-pic`} key={images[0].src}>
+        <picture key={images[0].src}>
             { sources }
             { img }
         </picture>

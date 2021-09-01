@@ -12,6 +12,8 @@ export default function SalaryPlate() {
                 от&nbsp;
                 <span className={`${CN}__text-big--bigger`}>100&nbsp;000</span> рублей
             </p>
+            <p className={`${CN}__resume`}>
+                <a href="/resume.pdf" target='_blank'>Резюме в PDF</a></p>
         </Plate>
     )
 }

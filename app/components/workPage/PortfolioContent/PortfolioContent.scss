@@ -60,7 +60,6 @@ $CN: portfolio-content;
     display: inline-block;
     background-color: white;
     padding: 2px 12px;
-    //border: 1px solid var(--black-link-border-color);
     border-radius: var(--radius);
     margin: 0 1rem 1rem 0;
 }
@@ -87,8 +86,10 @@ $CN: portfolio-content;
 }
 
 .#{$CN}__full-description-image {
+    display: block;
     max-width: 100%;
     border-radius: var(--radius);
+    margin-bottom: 1rem;
 }
 
 .#{$CN}__full-description-video-w {
@@ -101,9 +102,6 @@ $CN: portfolio-content;
 }
 
 // Indents
-.#{$CN}__full-description-image-pic + .#{$CN}__full-description-image-pic {
-    margin-top: 1rem;
-}
 .#{$CN}__full-description-text + .#{$CN}__full-description-video-w {
     margin-top: 1rem;
 }
