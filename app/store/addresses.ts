@@ -6,8 +6,8 @@ export const addresses = [
     },
     {
         prefix: 'phone',
-        text: '8 919 84-23-599',
-        href: 'tel:+79198425599'
+        text: '8 (985) 334-75-71',
+        href: 'tel:+79853347571'
     },
     {
         prefix: 'skype',
@@ -17,12 +17,12 @@ export const addresses = [
     {
         prefix: 'telegram',
         text: '@AndrewKozinsky',
-        href: 'telegram:AndrewKozinsky'
+        href: 'https://t-do.ru/AndrewKozinsky'
     },
     {
         prefix: 'hh',
         text: 'hh.ru',
-        href: 'https://orenburg.hh.ru/resume/17738216ff063294920039ed1f6852426c6f6a'
+        href: 'https://hh.ru/resume/5590c293ff093b1ca80039ed1f326d79536364'
     },
     {
         prefix: 'github',

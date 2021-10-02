@@ -1,9 +1,11 @@
 import React from 'react'
+import { getData } from './ExperienceData'
+import { ExperienceData } from './ExperienceTypes'
+
+const CN = 'experience'
 
 export default function Experience() {
-    const CN = 'experience'
-
-    const items = getData().map( (data, i) => {
+    const items = getData().map((data, i) => {
         return (
             <section className={CN} key={i}>
                 <h3 className={`${CN}__header`}>
@@ -15,9 +17,7 @@ export default function Experience() {
                 <h4 className={`${CN}__position`}>
                     {data.position}
                 </h4>
-                <p className={`${CN}__description`}>
-                    {data.description}
-                </p>
+                <Description descriptions={data.description} />
             </section>
         )
     })
@@ -25,38 +25,39 @@ export default function Experience() {
     return <>{items}</>
 }
 
+type DescriptionPropType = {
+    descriptions: ExperienceData.DescriptionArr
+}
 
-export function getData() {
-    return [
-        {
-            company: 'Компания N',
-            duration: 'Октябрь 2020 — июнь 2021',
-            position: 'Программист клиентской части',
-            description: 'Вёрстка и написание логики на Реакте информационной системы. Название компонии не раскрывается из-за Соглашения о неразглашении.'
-        },
-        {
-            company: 'ООО «Русхит»',
-            duration: '2016 — 2020',
-            position: 'Оформитель и верстальщик сайтов',
-            description: '5 лет удалённо помогаю с оформление и вёрсткой сайтов, писем и другими вещами связанными с рекламой в интернете. Для реализации вещей связанных с установкой вёрстки на систему управления разговаривал с программистами.'
-        },
-        {
-            company: 'Веб-студия «Информада»',
-            duration: '2015 — 2016',
-            position: 'Оформитель сайтов',
-            description: 'В основном рисовал одностраничные сайты, корпоративные и каталоги. Ушёл потому что хотел занимать не только оформлением сайтов, но и вёрсткой.'
-        },
-        {
-            company: 'Веб-студия «БиБрейн»',
-            duration: '2014 — 2015',
-            position: 'Оформитель сайтов',
-            description: 'Рисовал одностраничные и многостраничные сайты, каталоги, магазины. После весь материал отдавал верстальщику. Проработал вплодь до закрытия компании.'
-        },
-        {
-            company: '2 ГИС',
-            duration: '2012 — 2014',
-            position: 'Оформитель рекламных материалов',
-            description: 'Делал всё начиная от рекламы показываемой в программе, до вёрстки статей и полиграфии. Ушёл потому что было желание заниматься сайтами.'
+function Description(props: DescriptionPropType) {
+
+    const parts = props.descriptions.map((descItemData, i) => {
+        if (descItemData.type === 'text') {
+            return (
+                <p className={`${CN}__description-text`} key={i}>
+                    {descItemData.text}
+                </p>
+            )
         }
-    ]
+        else if (descItemData.type === 'list') {
+            return (
+                <ul className={`${CN}__description-list-ul`} key={i}>
+                    {
+                        descItemData.items.map((text, k) => {
+                            return (
+                                <li className={`${CN}__description-list-li`} key={k}>
+                                    {text}
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            )
+        }
+        else {
+            return null
+        }
+    })
+
+    return <>{parts}</>
 }

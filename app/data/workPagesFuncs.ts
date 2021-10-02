@@ -1,6 +1,5 @@
 import portfolioConfigItems from './portfolioConfigs'
-// import PortfolioConfig from './PortfolioConfigType'
-import { SectionIdType } from "../pages/[sectionId]";
+import { SectionIdType } from '../pages/[sectionId]'
 import PortfolioConfig from './PortfolioConfigType'
 
 

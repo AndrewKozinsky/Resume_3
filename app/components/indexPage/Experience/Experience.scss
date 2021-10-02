@@ -25,6 +25,26 @@ $CN: experience;
     margin-bottom: 5px;
 }
 
-.#{$CN}__description {
+.#{$CN}__description-text {
+    margin: 10px 0;
+}
 
+.#{$CN}__description-list-ul {
+    padding: 2px 0 2px 20px;
+}
+.#{$CN}__description-list-li {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 18px;
+    margin: 0 0 5px 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 10px;
+        height: 1px;
+        background: var(--text-color);
+    }
 }
