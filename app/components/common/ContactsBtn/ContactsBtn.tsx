@@ -2,6 +2,7 @@ import React from 'react'
 import { useAppSelector } from '../../../store/store'
 import { makeCN } from '../../../utils/StringUtils'
 
+/* Кнопка открывающая список контактов */
 export default function ContactsBtn() {
     const CN = 'contacts'
 

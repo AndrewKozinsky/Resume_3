@@ -1,6 +1,6 @@
 import React from 'react'
 import PortfolioConfig from '../../../data/PortfolioConfigType'
-import {makeCN} from '../../../utils/StringUtils'
+import { makeCN } from '../../../utils/StringUtils'
 
 const CN = 'portfolio-content'
 
@@ -223,3 +223,4 @@ function FullDescriptionVideo(props: FullDescriptionVideoItemPropType) {
         </div>
     )
 }
+

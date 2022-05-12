@@ -1,33 +1,16 @@
-import React, {ReactNode, useState} from 'react'
+import React, { ReactNode, useState } from 'react'
 import Link from 'next/link'
+import { MenuMenuItems, MenuSwitcherItem, MenuSwitcherItems } from './MenuTypes'
 import { useRouter } from 'next/router'
 import { makeCN } from '../../../utils/StringUtils'
+
+
+const CN = 'menu'
 
 export type MenuPropType = {
     itemsDetails: MenuMenuItems | MenuSwitcherItems
     extraClass?: string
 }
-
-export type MenuMenuItems = {
-    type: 'menu'
-    items: MenuMenuItem[]
-}
-export type MenuMenuItem = {
-    label: string
-    to: string
-}
-
-export type MenuSwitcherItems = {
-    type: 'switcher'
-    items: MenuSwitcherItem[]
-    initialActiveLabel?: string
-}
-export type MenuSwitcherItem = {
-    label: string
-    onClick?: any
-}
-
-const CN = 'menu'
 
 export default function Menu(props: MenuPropType) {
     const { itemsDetails, extraClass } = props

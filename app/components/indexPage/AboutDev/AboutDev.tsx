@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 const CN = 'about-dev'
 
@@ -30,7 +29,6 @@ function MyPhoto() {
             <source type="image/webp" srcSet={srcSetLargeWebP} />
             <source type="image/jpeg" srcSet={srcSetLargeJpeg} />
 
-            {/*<Image src={photoJpeg} className={`${CN}__photo`} alt='Андрей Козинский' layout='fill' />*/}
             <img src={photoJpeg} className={`${CN}__photo`} alt='Андрей Козинский' />
         </picture>
     )

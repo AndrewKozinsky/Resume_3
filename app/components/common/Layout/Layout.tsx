@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react'
+import React, { ReactNode } from 'react'
 import Footer from '../Footer/Footer'
 
 type LayoutPropType = {

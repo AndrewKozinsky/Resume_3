@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import Header from '../../../components/common/Header/Header'
-import {GetStaticPropsContext, GetStaticPropsResult} from 'next'
-import {getAllWorksIds, getWorkData} from '../../../data/workPagesFuncs'
+import { GetStaticPropsContext, GetStaticPropsResult } from 'next'
+import { getAllWorksIds, getWorkData } from '../../../data/workPagesFuncs'
 import PortfolioConfig from '../../../data/PortfolioConfigType'
 import Portfolio from '../../../components/workPage/Portfolio/Portfolio'
 

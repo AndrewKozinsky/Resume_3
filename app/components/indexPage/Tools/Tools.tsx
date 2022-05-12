@@ -16,7 +16,7 @@ export default function Tools() {
                     <div>
                         <p className={`${CN}__text`}>Писал на  нём как клиентские программы на Реакте, так и серверные на Экспрессе и Несте. В целом мне удаётся писать типы если не требуется какие-то особые реализации с хитным поведением. TypeScript показал для меня свою эффективность, поэтому планирую и дальше использовать на новой работе. </p>
                         <p className={`${CN}__text`}>До этого несколько лет писал только на JavaScript.</p>
-                        <p className={`${CN}__text`}>Опыт: <b>8 месяцев</b><span className={`${CN}__text-summary-divider`} />Уровень: <b>базовый</b></p>
+                        <p className={`${CN}__text`}>Опыт: <b>1,5 года</b><span className={`${CN}__text-summary-divider`} />Уровень: <b>уверенное использование</b></p>
                     </div>
                 </Plate>
                 <Plate>
@@ -26,7 +26,7 @@ export default function Tools() {
                     <div>
                         <p className={`${CN}__text`}>Сумею сделать широкий диапазон компонентов от элементов форм до страниц с множеством компонентов получающих данные с сервера и записывающие их в главное Хранилище. Писал как классовые компоненты, так и хуки.</p>
                         <p className={`${CN}__text`}>Делал свои сборки Реакта через Вебпак.</p>
-                        <p className={`${CN}__text`}>Опыт: <b>1,5 года</b><span className={`${CN}__text-summary-divider`} />Уровень: <b>средний</b></p>
+                        <p className={`${CN}__text`}>Опыт: <b>1,5 года</b><span className={`${CN}__text-summary-divider`} />Уровень: <b>уверенное использование</b></p>
                     </div>
                 </Plate>
             </div>
@@ -43,7 +43,7 @@ export default function Tools() {
                     </h3>
                     <div>
                         <p className={`${CN}__text`}>Есть базовые знания Докера. Есть опыт настройки монорепозиторя из нескольких контейнерах с Nginx-ом, сервером с API, клиентом на Реакте и выкладкой его на сервер с настройкой SSL.</p>
-                        <p className={`${CN}__text`}>Опыт: <b>несколько месяцев</b><span className={`${CN}__text-summary-divider`} />Уровень: <b>базовый</b></p>
+                        <p className={`${CN}__text`}>Опыт: <b>1 год</b><span className={`${CN}__text-summary-divider`} />Уровень: <b>базовый</b></p>
                     </div>
                 </div>
 
@@ -103,3 +103,4 @@ function Icon(prop: IconPropType) {
 
     return <div className={ makeCN(cls) } />
 }
+

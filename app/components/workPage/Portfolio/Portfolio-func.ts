@@ -25,3 +25,4 @@ export function useGetMainLeftAndRightClasses(CN: string) {
 
     return { mainLeftClasses, mainRightClasses }
 }
+

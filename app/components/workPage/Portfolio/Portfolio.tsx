@@ -4,7 +4,7 @@ import PortfolioConfig from '../../../data/PortfolioConfigType'
 import PortfolioTopControls from '../PortfolioTopControls/PortfolioTopControls'
 import { useGetMainLeftAndRightClasses } from './Portfolio-func'
 import { makeCN } from '../../../utils/StringUtils'
-import {getWorksConfigBySectionName} from '../../../data/workPagesFuncs'
+// import {getWorksConfigBySectionName} from '../../../data/workPagesFuncs'
 import PortfolioMenu from '../PortfolioMenu/PortfolioMenu'
 import PortfolioContent from '../PortfolioContent/PortfolioContent'
 

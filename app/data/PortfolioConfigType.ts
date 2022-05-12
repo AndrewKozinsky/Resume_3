@@ -1,4 +1,3 @@
-import React from 'react'
 
 namespace PortfolioConfig {
     export type Items = Item[]

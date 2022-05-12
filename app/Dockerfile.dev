@@ -1,4 +1,11 @@
-FROM node:14.15.3-alpine3.12
+FROM node:16.15-alpine3.15
 WORKDIR /app
-COPY . .
+
+COPY package*.json .
+
 RUN npm install
+RUN npm install -D @swc/cli @swc/core
+
+COPY . .
+
+ENV NODE_ENV development

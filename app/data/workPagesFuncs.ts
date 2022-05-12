@@ -29,3 +29,4 @@ export function getWorkData(set: PortfolioConfig.Set, workLink: string): Portfol
 
     return portfolioConfigItems[workIdx]
 }
+

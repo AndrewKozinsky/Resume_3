@@ -1,5 +1,5 @@
 import PortfolioConfig from '../../../data/PortfolioConfigType'
-import { MenuMenuItems } from '../../common/Menu/Menu'
+import { MenuMenuItems } from '../../common/Menu/MenuTypes'
 
 export type ItemsInCategoriesType = {
     [key: string]: PortfolioConfig.Items

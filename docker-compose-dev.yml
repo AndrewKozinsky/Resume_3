@@ -3,12 +3,18 @@ version: "3.3"
 services:
   app:
     build:
-      context: app
-      dockerfile: Dockerfile.dev
+      context: ./app
+      dockerfile: ./Dockerfile.dev
     container_name: ak-app
     command: npm run dev
     restart: unless-stopped
     ports:
       - "3000:3000"
     volumes:
-      - ./app:/app
+      - ./app/components:/app/components
+      - ./app/data:/app/data
+      - ./app/pages:/app/pages
+      - ./app/public:/app/public
+      - ./app/store:/app/store
+      - ./app/styles:/app/styles
+      - ./app/utils:/app/utils

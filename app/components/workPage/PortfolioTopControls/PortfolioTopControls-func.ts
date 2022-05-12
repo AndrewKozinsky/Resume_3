@@ -38,3 +38,4 @@ export function useGetPrevAndNextWorkUrl(workItem: PortfolioConfig.Item) {
 
     return { prevUrl, nextUrl }
 }
+

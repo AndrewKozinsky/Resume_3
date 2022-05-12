@@ -1,20 +1,21 @@
 import React from 'react'
 import Link from 'next/link'
-import Menu, {MenuMenuItems} from '../Menu/Menu'
+import Menu from '../Menu/Menu'
 import ContactsBtn from '../ContactsBtn/ContactsBtn'
-import {useGetMainLinkHover} from './Header-func'
+import { useGetMainLinkHover } from './Header-func'
+import {MenuMenuItems} from '../Menu/MenuTypes'
+
+const menuItems: MenuMenuItems = {
+    type: 'menu',
+    items: [
+        {label: 'Главная', to: '/'},
+        {label: 'Код', to: '/code'},
+        {label: 'Макеты', to: '/design'},
+    ]
+}
 
 export default function Header() {
     const CN = 'header'
-
-    const menuItems: MenuMenuItems = {
-        type: 'menu',
-        items: [
-            {label: 'Главная', to: '/'},
-            {label: 'Код', to: '/code'},
-            {label: 'Макеты', to: '/design'},
-        ]
-    }
 
     const onMainLintMouseEnter = useGetMainLinkHover(true)
     const onMainLintMouseLeave = useGetMainLinkHover(false)
@@ -33,7 +34,7 @@ export default function Header() {
                         </p>
                     </a>
                 </Link>
-                <p className={`${CN}__subtext`}>33 года, Москва</p>
+                <p className={`${CN}__subtext`}>33 года, Оренбург</p>
             </div>
             <div className={`${CN}__right-side`}>
                 <Menu itemsDetails={menuItems} extraClass={`${CN}__menu`} />

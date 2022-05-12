@@ -1,11 +1,18 @@
 import React from 'react'
-import {useAppSelector} from '../../../store/store'
+import { useAppSelector } from '../../../store/store'
 import { makeCN } from '../../../utils/StringUtils'
 
+const CN = 'footer'
 
 export default function Footer() {
-    const CN = 'footer'
+    return (
+        <address className={CN}>
+            <Cells />
+        </address>
+    )
+}
 
+function Cells() {
     const addresses = useAppSelector(state => state.addresses)
 
     const cellsMarkup = addresses.map(cellData => {
@@ -22,10 +29,5 @@ export default function Footer() {
         )
     })
 
-    return (
-        <address className={CN}>
-            {cellsMarkup}
-        </address>
-    )
+    return <>{cellsMarkup}</>
 }
-

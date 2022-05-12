@@ -1,11 +1,12 @@
 import React, {useCallback, useMemo} from 'react'
-import Menu, { MenuMenuItems, MenuSwitcherItems } from '../../common/Menu/Menu'
+import Menu from '../../common/Menu/Menu'
 import {useAppSelector} from '../../../store/store'
 import {
     useGetPrevAndNextWorkUrl,
     useGetLeftSwitcherItemClickHandler
 } from './PortfolioTopControls-func'
 import PortfolioConfig from "../../../data/PortfolioConfigType"
+import {MenuMenuItems, MenuSwitcherItems } from '../../common/Menu/MenuTypes'
 
 
 const CN = 'portfolio-top-controls'
@@ -65,3 +66,4 @@ function AnotherWorksLinks(props: TopMobilePartPropType) {
 
     return <Menu itemsDetails={items} extraClass={`${CN}__top-mobile-page-links`} />
 }
+

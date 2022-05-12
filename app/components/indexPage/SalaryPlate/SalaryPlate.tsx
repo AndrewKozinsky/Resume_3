@@ -10,10 +10,11 @@ export default function SalaryPlate() {
             <p className={`${CN}__text`}>Рассчитываю на оклад</p>
             <p className={`${CN}__text-big`}>
                 от&nbsp;
-                <span className={`${CN}__text-big--bigger`}>100&nbsp;000</span> рублей
+                <span className={`${CN}__text-big--bigger`}>120&nbsp;000</span> рублей
             </p>
             <p className={`${CN}__resume`}>
-                <a href="/resume.pdf" target='_blank'>Резюме в PDF</a></p>
+                <a href="/resume.pdf" target='_blank'>Резюме в PDF</a>
+            </p>
         </Plate>
     )
 }

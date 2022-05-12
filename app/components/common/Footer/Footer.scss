@@ -40,7 +40,7 @@ $CN: footer;
         padding-bottom: 0;
     }
 }
-@media (min-width: 1000px) and (max-width: 1600px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
     .#{$CN} {
         grid-template-columns: repeat(4, auto);
         margin-top: 8rem;
@@ -53,7 +53,7 @@ $CN: footer;
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
     .#{$CN} {
         display: flex;
         justify-content: space-between;

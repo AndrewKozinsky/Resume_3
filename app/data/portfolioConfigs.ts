@@ -5,22 +5,14 @@ const portfolioConfigItems: PortfolioConfig.Items = [
     {
         set: 'code',
         category: 'React',
-        title: 'Записная книжка',
+        title: 'Визуальный редактор статей',
         github: 'https://github.com/AndrewKozinsky/editor-public-copy',
-        siteLink: 'https://editorium.net/editor',
-        siteLinkText: 'editorium.net/editor',
+        siteLink: 'https://editorium.net',
+        siteLinkText: 'editorium.net',
         portfolioLink: 'editor',
-        shortDescription: 'Личный проект, делаю для себя в свободное время. Тут можно будет писать не просто текст, а HTML для выделения важный блоков.',
+        shortDescription: 'Визуальный редактор статей, который я делаю в свободное время. Сейчас он полностью работоспособен. Но пока не до конца написана документация.',
         tags: ['React', 'Hooks', 'Redux', 'TypeScript', 'SCSS', 'Docker', 'NodeJS', 'Nginx', 'Nest', 'Postgres'],
         description: [
-            {
-                type: 'text',
-                text: 'Публикую этот код чтобы вы смогли посмотреть его качество и оценить мои актуальные знания и принципы по которым я его пишу.'
-            },
-            {
-                type: 'text',
-                text: 'Вам не удастся запустить проект потому что я убрал некоторую конфиденциальную информацию вроде данных по подключению к базе данных и логин и пароль для доступа к сервису массовой отправки почты.'
-            },
             {
                 type: 'video',
                 poster: '/portfolio/editor_dev/editor_1_poster.png',
@@ -54,7 +46,7 @@ const portfolioConfigItems: PortfolioConfig.Items = [
             },
             {
                 type: 'text',
-                text: 'Для написания API изначально использовал Express в связке с Mongo. Потом переписал на Nest с Postgres-ом. Просто хотел попробовать как оно. С Монгой поменьше геморроя, тем более я не собираюсь как-то по-особому нагружать базу, поэтому без разницы что использовать. На первом месте стоит удобство.'
+                text: 'Для написания API изначально использовал Express в связке с Mongo. Потом переписал на Nest с Postgres-ом.'
             },
             {
                 type: 'header',
@@ -63,7 +55,7 @@ const portfolioConfigItems: PortfolioConfig.Items = [
             },
             {
                 type: 'text',
-                text: 'React с TypeScript. Самописная сборка ВебПака. Стили на SCSS. Маршрутизация React-Router.'
+                text: 'React с TypeScript. Собственная сборка ВебПака. Стили на SCSS. Маршрутизация React-Router.'
             },
             {
                 type: 'header',
@@ -133,7 +125,7 @@ const portfolioConfigItems: PortfolioConfig.Items = [
         description: [
             {
                 type: 'text',
-                text: 'Это достаточно старый проект на котором я хотел получше узнать про маршрутизацию, плавные переходы между страницами и хуки Реакта. Сейчас я уже не пишу в таком стиле (не ставлю логику в представление).'
+                text: 'Старый проект на котором я хотел получше узнать про маршрутизацию, плавные переходы между страницами и хуки Реакта. Сейчас я уже не пишу в таком стиле (не ставлю логику в представление).'
             },
             {
                 type: 'video',
@@ -718,3 +710,4 @@ const portfolioConfigItems: PortfolioConfig.Items = [
 ]
 
 export default portfolioConfigItems
+

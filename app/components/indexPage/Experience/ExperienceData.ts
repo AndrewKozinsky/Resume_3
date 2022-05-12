@@ -3,8 +3,34 @@ import {ExperienceData} from "./ExperienceTypes";
 export function getData(): ExperienceData.Data[] {
     return [
         {
+            company: 'Editorium.net',
+            duration: 'C середины 2019 года по н. в.',
+            position: 'Разработка визуального редактора статей',
+            description: [
+                {
+                    type: 'text',
+                    text: 'Это собственный проект где я занимался всем от рисования внешнего вида до написания кода. Занимаюсь им в свободное время уже несколько лет.'
+                }
+            ]
+        },
+        {
+            company: 'Skedbar.com',
+            duration: 'Ноябрь 2021 — апрель 2022',
+            position: 'Программист на React',
+            description: [
+                {
+                    type: 'text',
+                    text: 'Реализация маркетинговых гипотез улучшающих взаимодействие пользователей с сервисом. Работал с React-ом и Next-ом.'
+                },
+                {
+                    type: 'text',
+                    text: 'Компания отказалась от проверки гипотез и перешли на другие инструменты где не требуется программирование.'
+                }
+            ]
+        },
+        {
             company: 'Мегаплан',
-            duration: 'Сентябрь 2020 — октябрь 2021',
+            duration: 'Сентябрь 2021 — октябрь 2021',
             position: 'Программист на React',
             description: [
                 {
@@ -81,3 +107,4 @@ export function getData(): ExperienceData.Data[] {
         }
     ]
 }
+

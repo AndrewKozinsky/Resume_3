@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import {TypedUseSelectorHook, useSelector} from 'react-redux'
+import { TypedUseSelectorHook, useSelector } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 //@ts-ignore
 import { composeWithDevTools } from 'redux-devtools-extension'
