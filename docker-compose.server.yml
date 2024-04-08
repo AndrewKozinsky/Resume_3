@@ -7,8 +7,8 @@ services:
       dockerfile: Dockerfile.serv
     container_name: ak-app
     environment:
-      - VIRTUAL_HOST=andrewkozinsky.ru
-      - LETSENCRYPT_HOST=andrewkozinsky.ru
+      - VIRTUAL_HOST=andrewkozinsky.ru,www.andrewkozinsky.ru
+      - LETSENCRYPT_HOST=andrewkozinsky.ru,www.andrewkozinsky.ru
     restart: unless-stopped
 
 networks:
